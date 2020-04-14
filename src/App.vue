@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <HeaderGuide></HeaderGuide>
     <router-view/>
   </div>
 </template>
 
 <script>
+  import HeaderGuide from "./components/HeaderGuide/HeaderGuide";
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    HeaderGuide
+  }
 }
 </script>
 
@@ -20,5 +25,12 @@ export default {
   /*margin-top: 10px;*/
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+}
+a{
+  text-decoration: none;
+  color: white;
 }
 </style>
